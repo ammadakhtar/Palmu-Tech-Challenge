@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		094F538B1403D1E1C14DDC27 /* libPods-PalmuAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DEAA66D45671650E23E614 /* libPods-PalmuAppTests.a */; };
+		54759E873C999B9CDDC4D534 /* Pods_PalmuApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C483037FA441BBB480936AE0 /* Pods_PalmuApp.framework */; };
+		68A746662520A92F00D59621 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A746652520A92F00D59621 /* Optional.swift */; };
+		68A746682520AF1200D59621 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A746672520AF1200D59621 /* BaseViewModel.swift */; };
+		68A7466A2520AF7B00D59621 /* LikedPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A746692520AF7B00D59621 /* LikedPhotosViewModel.swift */; };
+		68A7466D2520B3CF00D59621 /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A7466C2520B3CF00D59621 /* AlertBuilder.swift */; };
+		68A7466F2520BDF600D59621 /* LikedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A7466E2520BDF600D59621 /* LikedPhoto.swift */; };
+		68A746712520C00700D59621 /* JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A746702520C00700D59621 /* JSONDecoder.swift */; };
+		68A746732520D23000D59621 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A746722520D23000D59621 /* UIView.swift */; };
+		68E5CA1E251E4AC200425319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5CA1D251E4AC200425319 /* AppDelegate.swift */; };
+		68E5CA20251E4AC200425319 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5CA1F251E4AC200425319 /* SceneDelegate.swift */; };
+		68E5CA22251E4AC200425319 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5CA21251E4AC200425319 /* ContainerViewController.swift */; };
+		68E5CA25251E4AC200425319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E5CA23251E4AC200425319 /* Main.storyboard */; };
+		68E5CA27251E4AC700425319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68E5CA26251E4AC700425319 /* Assets.xcassets */; };
+		68E5CA2A251E4AC700425319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68E5CA28251E4AC700425319 /* LaunchScreen.storyboard */; };
+		68E5CA33251E4CB300425319 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5CA31251E4CB300425319 /* FeedViewController.swift */; };
+		68E5CA34251E4CB300425319 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68E5CA32251E4CB300425319 /* FeedViewController.xib */; };
+		68E5CA37251E4CD900425319 /* LikedPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E5CA35251E4CD900425319 /* LikedPhotosViewController.swift */; };
+		68E5CA38251E4CD900425319 /* LikedPhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68E5CA36251E4CD900425319 /* LikedPhotosViewController.xib */; };
+		8133B969251F438100F7711B /* LikedPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8133B967251F438100F7711B /* LikedPhotoCell.swift */; };
+		8133B96A251F438100F7711B /* LikedPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8133B968251F438100F7711B /* LikedPhotoCell.xib */; };
+		813C7AE825226EA400F2235C /* PhotoModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813C7AE725226EA400F2235C /* PhotoModelTests.swift */; };
+		814708F525227B540041CDB0 /* LikedPhotoModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814708F425227B540041CDB0 /* LikedPhotoModelTests.swift */; };
+		81B0EF61251F498100B06597 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0EF60251F498100B06597 /* Constants.swift */; };
+		81B0EF64251F49CD00B06597 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0EF63251F49CD00B06597 /* APIClient.swift */; };
+		81B0EF69251F4E4D00B06597 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0EF68251F4E4D00B06597 /* APIRouter.swift */; };
+		81B0EF6C251F50E500B06597 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0EF6B251F50E500B06597 /* PhotoModel.swift */; };
+		81B0EF6E251F7C0A00B06597 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81B0EF6D251F7C0A00B06597 /* GoogleService-Info.plist */; };
+		81B0EF71251FA7A000B06597 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B0EF70251FA7A000B06597 /* FeedViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		813C7AE125226E5D00F2235C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68E5CA12251E4AC200425319 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68E5CA19251E4AC200425319;
+			remoteInfo = PalmuApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68A746652520A92F00D59621 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		68A746672520AF1200D59621 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		68A746692520AF7B00D59621 /* LikedPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPhotosViewModel.swift; sourceTree = "<group>"; };
+		68A7466C2520B3CF00D59621 /* AlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
+		68A7466E2520BDF600D59621 /* LikedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPhoto.swift; sourceTree = "<group>"; };
+		68A746702520C00700D59621 /* JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoder.swift; sourceTree = "<group>"; };
+		68A746722520D23000D59621 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		68E5CA1A251E4AC200425319 /* PalmuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PalmuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E5CA1D251E4AC200425319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		68E5CA1F251E4AC200425319 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		68E5CA21251E4AC200425319 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		68E5CA24251E4AC200425319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		68E5CA26251E4AC700425319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68E5CA29251E4AC700425319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		68E5CA2B251E4AC700425319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68E5CA31251E4CB300425319 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		68E5CA32251E4CB300425319 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		68E5CA35251E4CD900425319 /* LikedPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPhotosViewController.swift; sourceTree = "<group>"; };
+		68E5CA36251E4CD900425319 /* LikedPhotosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikedPhotosViewController.xib; sourceTree = "<group>"; };
+		69DEAA66D45671650E23E614 /* libPods-PalmuAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PalmuAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8133B967251F438100F7711B /* LikedPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPhotoCell.swift; sourceTree = "<group>"; };
+		8133B968251F438100F7711B /* LikedPhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikedPhotoCell.xib; sourceTree = "<group>"; };
+		813C7ADC25226E5D00F2235C /* PalmuAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalmuAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		813C7AE025226E5D00F2235C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813C7AE725226EA400F2235C /* PhotoModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelTests.swift; sourceTree = "<group>"; };
+		814708F425227B540041CDB0 /* LikedPhotoModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPhotoModelTests.swift; sourceTree = "<group>"; };
+		81B0EF60251F498100B06597 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		81B0EF63251F49CD00B06597 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		81B0EF68251F4E4D00B06597 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		81B0EF6B251F50E500B06597 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		81B0EF6D251F7C0A00B06597 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		81B0EF70251FA7A000B06597 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		8A4DDB836E7E18C68184E8FD /* Pods-PalmuAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalmuAppTests.release.xcconfig"; path = "Target Support Files/Pods-PalmuAppTests/Pods-PalmuAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F6BE061DE3C96DDA204ED5F /* Pods-PalmuApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalmuApp.release.xcconfig"; path = "Target Support Files/Pods-PalmuApp/Pods-PalmuApp.release.xcconfig"; sourceTree = "<group>"; };
+		A7E74C0349D16342593ACCAF /* Pods-PalmuApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalmuApp.debug.xcconfig"; path = "Target Support Files/Pods-PalmuApp/Pods-PalmuApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C483037FA441BBB480936AE0 /* Pods_PalmuApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PalmuApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2EF77F83B71AE28A54E0A90 /* Pods-PalmuAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PalmuAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PalmuAppTests/Pods-PalmuAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68E5CA17251E4AC200425319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54759E873C999B9CDDC4D534 /* Pods_PalmuApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813C7AD925226E5D00F2235C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				094F538B1403D1E1C14DDC27 /* libPods-PalmuAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29CB92F25F6A343BD0999D65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7E74C0349D16342593ACCAF /* Pods-PalmuApp.debug.xcconfig */,
+				9F6BE061DE3C96DDA204ED5F /* Pods-PalmuApp.release.xcconfig */,
+				E2EF77F83B71AE28A54E0A90 /* Pods-PalmuAppTests.debug.xcconfig */,
+				8A4DDB836E7E18C68184E8FD /* Pods-PalmuAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		68A7466B2520B3BC00D59621 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				68A7466C2520B3CF00D59621 /* AlertBuilder.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		68E5CA11251E4AC200425319 = {
+			isa = PBXGroup;
+			children = (
+				68E5CA1C251E4AC200425319 /* PalmuApp */,
+				68E5CA1B251E4AC200425319 /* Products */,
+				29CB92F25F6A343BD0999D65 /* Pods */,
+				CCE33DD153868CB2727893DE /* Frameworks */,
+				813C7ADD25226E5D00F2235C /* PalmuAppTests */,
+				813C7AE625226E6600F2235C /* External Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		68E5CA1B251E4AC200425319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68E5CA1A251E4AC200425319 /* PalmuApp.app */,
+				813C7ADC25226E5D00F2235C /* PalmuAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68E5CA1C251E4AC200425319 /* PalmuApp */ = {
+			isa = PBXGroup;
+			children = (
+				8133B95D251F41AF00F7711B /* Classes */,
+				68E5CA2B251E4AC700425319 /* Info.plist */,
+			);
+			path = PalmuApp;
+			sourceTree = "<group>";
+		};
+		8133B95D251F41AF00F7711B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8133B95E251F41B600F7711B /* Application */,
+				81B0EF6A251F50C300B06597 /* Model */,
+				8133B95F251F41E000F7711B /* View */,
+				81B0EF6F251FA78500B06597 /* View Model */,
+				81B0EF62251F49AE00B06597 /* Network Layer */,
+				8133B963251F423F00F7711B /* StoryBoard */,
+				8133B964251F425400F7711B /* Launch Screen */,
+				81B0EF5F251F496E00B06597 /* Constants */,
+				81B0EF65251F4B1200B06597 /* Extensions */,
+				68A7466B2520B3BC00D59621 /* Utilities */,
+				8133B965251F426000F7711B /* Assets */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8133B95E251F41B600F7711B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				68E5CA1D251E4AC200425319 /* AppDelegate.swift */,
+				68E5CA1F251E4AC200425319 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8133B95F251F41E000F7711B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8133B962251F422200F7711B /* Container */,
+				8133B960251F41FB00F7711B /* Feed */,
+				8133B961251F421400F7711B /* Liked Photos */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8133B960251F41FB00F7711B /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				68E5CA31251E4CB300425319 /* FeedViewController.swift */,
+				68E5CA32251E4CB300425319 /* FeedViewController.xib */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		8133B961251F421400F7711B /* Liked Photos */ = {
+			isa = PBXGroup;
+			children = (
+				8133B966251F42EE00F7711B /* Cell */,
+				68E5CA35251E4CD900425319 /* LikedPhotosViewController.swift */,
+				68E5CA36251E4CD900425319 /* LikedPhotosViewController.xib */,
+			);
+			path = "Liked Photos";
+			sourceTree = "<group>";
+		};
+		8133B962251F422200F7711B /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				68E5CA21251E4AC200425319 /* ContainerViewController.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		8133B963251F423F00F7711B /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				68E5CA23251E4AC200425319 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		8133B964251F425400F7711B /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				68E5CA28251E4AC700425319 /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		8133B965251F426000F7711B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				68E5CA26251E4AC700425319 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8133B966251F42EE00F7711B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8133B967251F438100F7711B /* LikedPhotoCell.swift */,
+				8133B968251F438100F7711B /* LikedPhotoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		813C7ADD25226E5D00F2235C /* PalmuAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				813C7AE725226EA400F2235C /* PhotoModelTests.swift */,
+				814708F425227B540041CDB0 /* LikedPhotoModelTests.swift */,
+				813C7AE025226E5D00F2235C /* Info.plist */,
+			);
+			path = PalmuAppTests;
+			sourceTree = "<group>";
+		};
+		813C7AE625226E6600F2235C /* External Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81B0EF6D251F7C0A00B06597 /* GoogleService-Info.plist */,
+			);
+			path = "External Resources";
+			sourceTree = "<group>";
+		};
+		81B0EF5F251F496E00B06597 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				81B0EF60251F498100B06597 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		81B0EF62251F49AE00B06597 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				81B0EF63251F49CD00B06597 /* APIClient.swift */,
+				81B0EF68251F4E4D00B06597 /* APIRouter.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		81B0EF65251F4B1200B06597 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68A746652520A92F00D59621 /* Optional.swift */,
+				68A746702520C00700D59621 /* JSONDecoder.swift */,
+				68A746722520D23000D59621 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81B0EF6A251F50C300B06597 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81B0EF6B251F50E500B06597 /* PhotoModel.swift */,
+				68A7466E2520BDF600D59621 /* LikedPhoto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81B0EF6F251FA78500B06597 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				68A746672520AF1200D59621 /* BaseViewModel.swift */,
+				81B0EF70251FA7A000B06597 /* FeedViewModel.swift */,
+				68A746692520AF7B00D59621 /* LikedPhotosViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		CCE33DD153868CB2727893DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C483037FA441BBB480936AE0 /* Pods_PalmuApp.framework */,
+				69DEAA66D45671650E23E614 /* libPods-PalmuAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68E5CA19251E4AC200425319 /* PalmuApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68E5CA2E251E4AC700425319 /* Build configuration list for PBXNativeTarget "PalmuApp" */;
+			buildPhases = (
+				779E7A46D98D9344DD6B9021 /* [CP] Check Pods Manifest.lock */,
+				68E5CA16251E4AC200425319 /* Sources */,
+				68E5CA17251E4AC200425319 /* Frameworks */,
+				68E5CA18251E4AC200425319 /* Resources */,
+				B23D8FBF40D268E1DF8241DA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PalmuApp;
+			productName = PalmuApp;
+			productReference = 68E5CA1A251E4AC200425319 /* PalmuApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		813C7ADB25226E5D00F2235C /* PalmuAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813C7AE325226E5D00F2235C /* Build configuration list for PBXNativeTarget "PalmuAppTests" */;
+			buildPhases = (
+				894D258C289212B54FD19E32 /* [CP] Check Pods Manifest.lock */,
+				813C7AD825226E5D00F2235C /* Sources */,
+				813C7AD925226E5D00F2235C /* Frameworks */,
+				813C7ADA25226E5D00F2235C /* Resources */,
+				D4BFE50B14B93F330DEC6F26 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				813C7AE225226E5D00F2235C /* PBXTargetDependency */,
+			);
+			name = PalmuAppTests;
+			productName = PalmuAppTests;
+			productReference = 813C7ADC25226E5D00F2235C /* PalmuAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68E5CA12251E4AC200425319 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Palmo;
+				TargetAttributes = {
+					68E5CA19251E4AC200425319 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					813C7ADB25226E5D00F2235C = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 68E5CA19251E4AC200425319;
+					};
+				};
+			};
+			buildConfigurationList = 68E5CA15251E4AC200425319 /* Build configuration list for PBXProject "PalmuApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68E5CA11251E4AC200425319;
+			productRefGroup = 68E5CA1B251E4AC200425319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68E5CA19251E4AC200425319 /* PalmuApp */,
+				813C7ADB25226E5D00F2235C /* PalmuAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68E5CA18251E4AC200425319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E5CA2A251E4AC700425319 /* LaunchScreen.storyboard in Resources */,
+				68E5CA27251E4AC700425319 /* Assets.xcassets in Resources */,
+				8133B96A251F438100F7711B /* LikedPhotoCell.xib in Resources */,
+				68E5CA38251E4CD900425319 /* LikedPhotosViewController.xib in Resources */,
+				68E5CA34251E4CB300425319 /* FeedViewController.xib in Resources */,
+				68E5CA25251E4AC200425319 /* Main.storyboard in Resources */,
+				81B0EF6E251F7C0A00B06597 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813C7ADA25226E5D00F2235C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		779E7A46D98D9344DD6B9021 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PalmuApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		894D258C289212B54FD19E32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PalmuAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B23D8FBF40D268E1DF8241DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PalmuApp/Pods-PalmuApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PalmuApp/Pods-PalmuApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PalmuApp/Pods-PalmuApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4BFE50B14B93F330DEC6F26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PalmuAppTests/Pods-PalmuAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PalmuAppTests/Pods-PalmuAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PalmuAppTests/Pods-PalmuAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68E5CA16251E4AC200425319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E5CA22251E4AC200425319 /* ContainerViewController.swift in Sources */,
+				68A746712520C00700D59621 /* JSONDecoder.swift in Sources */,
+				68E5CA1E251E4AC200425319 /* AppDelegate.swift in Sources */,
+				81B0EF71251FA7A000B06597 /* FeedViewModel.swift in Sources */,
+				68A7466A2520AF7B00D59621 /* LikedPhotosViewModel.swift in Sources */,
+				8133B969251F438100F7711B /* LikedPhotoCell.swift in Sources */,
+				81B0EF64251F49CD00B06597 /* APIClient.swift in Sources */,
+				68E5CA33251E4CB300425319 /* FeedViewController.swift in Sources */,
+				81B0EF61251F498100B06597 /* Constants.swift in Sources */,
+				68A746682520AF1200D59621 /* BaseViewModel.swift in Sources */,
+				68A7466D2520B3CF00D59621 /* AlertBuilder.swift in Sources */,
+				81B0EF69251F4E4D00B06597 /* APIRouter.swift in Sources */,
+				81B0EF6C251F50E500B06597 /* PhotoModel.swift in Sources */,
+				68E5CA37251E4CD900425319 /* LikedPhotosViewController.swift in Sources */,
+				68E5CA20251E4AC200425319 /* SceneDelegate.swift in Sources */,
+				68A7466F2520BDF600D59621 /* LikedPhoto.swift in Sources */,
+				68A746732520D23000D59621 /* UIView.swift in Sources */,
+				68A746662520A92F00D59621 /* Optional.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813C7AD825226E5D00F2235C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814708F525227B540041CDB0 /* LikedPhotoModelTests.swift in Sources */,
+				813C7AE825226EA400F2235C /* PhotoModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		813C7AE225226E5D00F2235C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68E5CA19251E4AC200425319 /* PalmuApp */;
+			targetProxy = 813C7AE125226E5D00F2235C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68E5CA23251E4AC200425319 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68E5CA24251E4AC200425319 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		68E5CA28251E4AC700425319 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68E5CA29251E4AC700425319 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68E5CA2C251E4AC700425319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		68E5CA2D251E4AC700425319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68E5CA2F251E4AC700425319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E74C0349D16342593ACCAF /* Pods-PalmuApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PalmuApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PalmuApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68E5CA30251E4AC700425319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F6BE061DE3C96DDA204ED5F /* Pods-PalmuApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PalmuApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PalmuApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		813C7AE425226E5D00F2235C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2EF77F83B71AE28A54E0A90 /* Pods-PalmuAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PalmuAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightInc.PalmuAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PalmuApp.app/PalmuApp";
+			};
+			name = Debug;
+		};
+		813C7AE525226E5D00F2235C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A4DDB836E7E18C68184E8FD /* Pods-PalmuAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PalmuAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightInc.PalmuAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PalmuApp.app/PalmuApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68E5CA15251E4AC200425319 /* Build configuration list for PBXProject "PalmuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E5CA2C251E4AC700425319 /* Debug */,
+				68E5CA2D251E4AC700425319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68E5CA2E251E4AC700425319 /* Build configuration list for PBXNativeTarget "PalmuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E5CA2F251E4AC700425319 /* Debug */,
+				68E5CA30251E4AC700425319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813C7AE325226E5D00F2235C /* Build configuration list for PBXNativeTarget "PalmuAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813C7AE425226E5D00F2235C /* Debug */,
+				813C7AE525226E5D00F2235C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68E5CA12251E4AC200425319 /* Project object */;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>769607145000-d0i62clnv67v4ektma8k3944up9k0mpp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.769607145000-d0i62clnv67v4ektma8k3944up9k0mpp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDxPHmLgNXIO46hK95jTz7JwPk_opTTfCM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>769607145000</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.PalmuApp</string>
+	<key>PROJECT_ID</key>
+	<string>palmu-demo</string>
+	<key>STORAGE_BUCKET</key>
+	<string>palmu-demo.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:769607145000:ios:1b203ad35732e20bccc71d</string>
+	<key>DATABASE_URL</key>
+	<string>https://palmu-demo.firebaseio.com</string>
+</dict>
+</plist>
